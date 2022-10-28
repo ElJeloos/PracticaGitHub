@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\validadorJuego;
 
 class controladorVistas extends Controller
 {
@@ -19,6 +20,10 @@ class controladorVistas extends Controller
     public function viewMostrarP(){
         return view('MostrarP');
         
+    }
+
+    public function confirmarGame(validadorJuego $req){
+        return redirect('RegistrarP')->with('Exito','Datos Almacenados');
     }
 
 

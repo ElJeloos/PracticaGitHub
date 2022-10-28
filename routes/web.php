@@ -29,6 +29,9 @@ Route::get('RegistrarP',[controladorVistas::class,'viewRegistrarP'])->name('Regi
 
 Route::get('MostrarP',[controladorVistas::class,'viewMostrarP'])->name('MostP');
 
+Route::post('GuardarJuego', [controladorVistas::class,'confirmarGame']);
+
+
 
 
 
