@@ -3,11 +3,11 @@
 @section('contenido')
 
 @if(session()->has('Exito'))
-    {{!!" <script > Swal.fire(
-  'Good job!',
-  'You clicked the button!',
+    {!!" <script > Swal.fire(
+  'Buen Trabajo',
+  '',
   'success'
-)  </script>"!!}}
+)  </script>"!!}
 
 
  @endif
@@ -45,7 +45,7 @@
     <div class="mb-3">
         <p class="text-primary fst-italic">{{$errors->first('txtprecio')}}</p>
         <label for="exampleInputPassword1" class="form-label">Precio</label>
-        <input type="text" class="form-control" name="txtprecio" >
+        <input type="number" class="form-control" name="txtprecio" >
     </div>
 
     <button type="submit" class="btn btn-primary">Guardar</button>
